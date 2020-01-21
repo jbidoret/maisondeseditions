@@ -1,0 +1,64 @@
+type: fields
+fields:
+  headline-order:
+    label: Commande
+    type: headline
+    numbered: false
+  shipped:
+    label: Commande traitée et envoyée
+    type: toggle
+    text:
+      - "Non"
+      - "Oui"
+  info-order:
+    label: Informations
+    type: info
+    text: >
+      Numéro de facture : {{ page.invoiceNumber }}<br>
+      Total : {{ page.formattedSum }}<br>
+      Date de facturation : {{ page.formattedInvoiceDate }}<br>
+      Date de paiement : {{ page.formattedPayedDate }}<br>
+      Date de traitement : {{ page.formattedShippingDate }}
+  items:
+    label: Items
+    type: structure
+    fields:
+      id:
+        label: ID
+        type: text
+      title:
+        label: Title
+        type: text
+      quantity:
+        label: Quantity
+        type: number
+      price:
+        label: Price
+        type: number
+      tax:
+        label: Tax
+        type: number
+      sum:
+        label: Sum
+        type: number
+      sumTax:
+        label: Sum Tax
+        type: number
+      giftfrom:
+        label: De la part de…
+        type: textarea
+      giftto:
+        label: Pour…
+        type: textarea
+  email:
+    label: Email
+    type: email
+    required: true
+    width: 3/4
+  legal:
+    label: Conditions générales
+    type: toggle
+    text:
+      - "Non validées"
+      - "Validées"
+    width: 1/4

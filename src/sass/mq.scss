@@ -1,0 +1,56 @@
+@media screen and (max-width: 1000px){
+    :root{
+        --fullwhitespace: 12rem;
+        --whitespace: 7.5rem;
+    }
+    // #header{ flex-direction: column;}
+    #logo { margin-bottom: 2.25rem;}
+    
+    .menu { flex-wrap: wrap;}
+    .menu li, .menu a { white-space: nowrap;}
+    .variant .price {display: block; padding:0;}
+    .description {flex-direction: row-reverse;}
+    .variants {width: 17.5rem; padding: 1.5rem 0 0 2rem;}
+}
+
+@media screen and (max-width: 800px){
+    :root{
+        --fullwhitespace: 12rem;
+        --whitespace: 0rem;
+    }
+    .description {flex-direction: column-reverse;}
+    .variants {width: auto; padding: 1.5rem 0 0 0rem; display: flex; > * { padding-right: 2em;}}
+    .product .intro { margin-left: 0;}
+    .checkout-step {padding-left: 5rem;}
+}
+
+
+@media screen and (max-width: 650px){
+    #header{ flex-direction: column;}
+    .menu { margin-left: 5rem;}
+    .list strong { font-size: 2.5rem;}
+    .menu {padding-top: 0;}
+    #test.visible .flex, #address.visible .flex, #delivery.visible .flex, #payment.visible .flex{ 
+        flex-direction: column;
+        article {width: 100%;}
+    }
+    
+}
+
+
+@media screen and (max-width: 450px){
+    body{ margin: 0 1em;}
+    #logo::before {
+        position: static;
+        margin:0 0 2rem;
+    }
+    #logo,
+    .menu { margin-left: 0;}
+    #logo,
+    .main { padding-left: 0;}
+    .list strong { font-size: 1.5rem;}
+    .gallery {margin: 0 calc(-2em) 0 -1em;}
+    .variants { width: auto; padding: 1.5rem 0 0 0rem; display: block; > * { padding-right: 0;}}
+    .tns-controls {display: none;}
+    .checkout-step {padding-left: 0;}
+}

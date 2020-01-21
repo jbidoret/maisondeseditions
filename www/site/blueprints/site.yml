@@ -1,0 +1,9 @@
+title: Site
+
+columns:
+
+  - width: 1/2
+    sections:
+      pages:
+        type: pages
+        order: false

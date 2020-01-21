@@ -1,0 +1,25 @@
+title: Objets
+
+status:
+  draft: true
+  unlisted: true
+  listed: true
+
+# Define the form layout with two columns
+# Columns are optional but help structure the form layout
+# More about columns: https://getkirby.com/docs/guide/blueprints/layout#defining-columns
+sections:
+  infos:
+    type: fields
+    fields:
+      text:
+        label: Texte
+        type: textarea
+  drafts:
+    headline: Brouillons
+    extends: sections/products
+
+  published:
+    headline: Articles
+    extends: sections/products
+    layout: cards

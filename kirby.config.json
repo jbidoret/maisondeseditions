@@ -1,0 +1,10 @@
+{
+  "modules": {
+    "core": "https://github.com/getkirby/kirby.git",
+    "plugins": {
+      "kirby3-autoid": "https://github.com/bnomei/kirby3-autoid.git",
+      "kirby3-feed": "https://github.com/bnomei/kirby3-feed.git",
+      "cachebuster": "https://github.com/schnti/kirby3-cachebuster.git"
+    }
+  }
+}

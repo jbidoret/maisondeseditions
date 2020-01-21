@@ -1,0 +1,9 @@
+type: pages
+headline: Products
+parent: site.find("shop")
+template: product
+info: "{{ page.category }} – {{ page.authors }} – {{ page.price }} € "
+image:
+  query: page.cover
+  ratio: 3/2
+  cover: true

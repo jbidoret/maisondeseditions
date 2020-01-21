@@ -1,0 +1,41 @@
+// hidden helper
+
+[hidden="true"], [hidden] {
+    display: none !important;
+}
+
+
+// Grid helper
+$baseline: 2.6125rem; //2.375 em * 1.1
+$columns: 12;
+@mixin baseline-grid {
+    @if ($debug) {
+        $column-color: rgba(200,0,0,0.05);
+        $baseline-color: rgba(56,255,255,0.2);
+        $gutterwidth: 20px;
+
+        background-color: $bgcolor;
+        background-image: -moz-linear-gradient(0deg, $column-color calc((100% - #{$gutterwidth})), transparent $gutterwidth),
+                                -moz-linear-gradient(top, rgba(0,0,0,0) 95%, $baseline-color 100%);
+
+        background-size: calc((100% - #{$gutterwidth}) / #{$columns}) 100%, 100% $baseline;
+        background-position: $gutterwidth 1px;
+        background-attachment: fixed;
+    }
+}
+
+body {
+    @include baseline-grid;
+}
+
+// No select
+
+@mixin noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

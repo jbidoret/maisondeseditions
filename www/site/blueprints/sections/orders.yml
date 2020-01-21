@@ -1,0 +1,9 @@
+
+headline: Commandes
+create: false
+type: pages
+parent: site.find("test-orders")
+template: order
+sortBy: num desc
+text: "#{{ page.invoiceNumber }}"
+info: "{{ page.formattedName }} {{ page.formattedIsShipped }} {{ page.formattedSum }}"

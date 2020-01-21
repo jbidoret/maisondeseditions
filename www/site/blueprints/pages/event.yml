@@ -1,0 +1,21 @@
+title: Évènements
+
+preset: page
+
+fields:
+  subtitle:
+    label: Sous-titre
+    type:  text
+  intro:
+    label: Introduction
+    type:  textarea
+  text:
+    label: Text
+    type:  textarea  
+  gallery:
+    label: Galerie           
+    type: select
+    options:
+      justified: Justifiée
+      simple: Simple
+    default: justified  

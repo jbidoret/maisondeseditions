@@ -1,0 +1,17 @@
+title: Liste
+
+
+
+
+sections:
+  drafts:
+    type: pages
+    headline: Brouillons
+    status: draft
+    empty: "Pas d’article"
+    templates: event
+
+  published:
+    type: pages
+    headline: Articles
+    status: listed

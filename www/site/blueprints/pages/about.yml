@@ -1,0 +1,38 @@
+title: À propos
+
+status:
+  draft: true
+  listed: true
+
+options:
+  changeSlug: false
+  delete: false
+  changeStatus: false
+
+columns:
+  - width: 2/3
+    fields:
+      subtitle:
+        label: Sous-titre
+        type:  text 
+      text:
+        label: Text
+        type: textarea
+
+  - width: 1/3
+    fields:
+      email:
+        label: E-mail
+        type: email
+      social:
+        label: Sur le web
+        type: structure
+        fields:
+          platform:
+            label: Platform
+            type: text
+            width: 1/2
+          url:
+            label: URL
+            type: url
+            width: 1/2
