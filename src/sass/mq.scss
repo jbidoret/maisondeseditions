@@ -11,6 +11,10 @@
     .variant .price {display: block; padding:0;}
     .description {flex-direction: row-reverse;}
     .variants {width: 17.5rem; padding: 1.5rem 0 0 2rem;}
+    .news-link {
+        padding-left: 0;
+        max-width: 17.5rem;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -22,6 +26,18 @@
     .variants {width: auto; padding: 1.5rem 0 0 0rem; display: flex; > * { padding-right: 2em;}}
     .product .intro { margin-left: 0;}
     .checkout-step {padding-left: 5rem;}
+    .news-link {
+        float: none;
+        max-width: none;
+    }
+    .products {
+        .grid-sizer,
+        .grid-item { width: calc((100% - 15px * 3 ) / 4 ); }
+        .grid-item.size-double {
+        width: calc((100% - 15px * 3 ) / 4 * 2 + 15px );
+        }
+    }
+    
 }
 
 
@@ -34,7 +50,14 @@
         flex-direction: column;
         article {width: 100%;}
     }
-    
+    #home-content {font-size: 1.5em;}
+    .products {
+        .grid-sizer,
+        .grid-item { width: calc((100% - 15px * 2 ) / 3 ); }
+        .grid-item.size-double {
+        width: calc((100% - 15px * 2 ) / 3 * 2 + 15px );
+        }
+    }
 }
 
 
@@ -53,4 +76,10 @@
     .variants { width: auto; padding: 1.5rem 0 0 0rem; display: block; > * { padding-right: 0;}}
     .tns-controls {display: none;}
     .checkout-step {padding-left: 0;}
+    .products {
+        width: 100%;
+        .grid-sizer,
+        .grid-item,
+        .grid-item.size-double { width: 100%}
+    }
 }

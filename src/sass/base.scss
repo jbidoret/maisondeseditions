@@ -419,7 +419,7 @@ h4 a {
 
 .products {
   margin-top: 3em;
-  width: calc(100% - 2.5%);
+  width: calc(100% - 2em);
   .grid-item {
     float: left;
     position: relative;
@@ -428,15 +428,19 @@ h4 a {
     line-height: 1.1;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 15px;
+    overflow: hidden;
   }
   .grid-sizer,
-  .grid-item { width: 18%; }
+  .grid-item { width: calc((100% - 15px * 4 ) / 5 ); }
   /* 2 columns */
   .grid-item.size-double {
-    width: 38.5%;
+    width: calc((100% - 15px * 4 ) / 5 * 2 + 15px );
   }
 
-  .gutter-sizer { width: 2.5%;}
+  
+
+  .gutter-sizer { width: 15px;}
 
   li.color-purple { background-color: #821eb0;}
   li.color-pink { background-color: #f933d1;}
