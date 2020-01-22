@@ -1,9 +1,19 @@
 title: Site
 
 columns:
-
+  - width: 1/2
+    sections:
+      orders: sections/orders
   - width: 1/2
     sections:
       pages:
         type: pages
+        create: false
         order: false
+        templates:
+          - about
+          - list
+          - events
+          - shop
+          - home
+          - legal
