@@ -17,9 +17,11 @@ sections:
         type: textarea
   drafts:
     headline: Brouillons
+    status: draft
     extends: sections/products
 
   published:
     headline: Articles
+    status: listed
     extends: sections/products
     layout: cards
