@@ -186,7 +186,7 @@ use Wagnerwagner\Merx\Merx;
                               <?= $orderPage->city() ?><br>
                                 <?= $orderPage->country() ?>
                                   <?php elseif($orderPage->deliveryAddress()  == "atTheWorkshop"): ?>
-                                  <?php echo tt("email.confirmation.pickUpAtTheWorkshop" ["address" => $site->address()]) ?>
+                                  <?php echo tt("email.confirmation.pickUpAtTheWorkshop", ["address" => $site->address()]) ?>
                                   <?php else: ?>
                                   <?php echo t("Envoi postal à l’adresse suivante:") ?><br>
                                   <?= $orderPage->shippingAddressName() ?><br>
