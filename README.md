@@ -1,4 +1,4 @@
-# kwpstart
+# Maison des éditions
 
 Kirby + Webpack Starterkit
 
