@@ -42,7 +42,7 @@
 				</div>
 				<div class="details">
                     <p>
-                        <?= $page->authors()->kt() ?>
+                        <?= $page->authors()->kti() ?>
                     </p>
                     <div class="intro">
                         <?= $page->intro()->kt() ?>
