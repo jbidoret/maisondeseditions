@@ -2,7 +2,7 @@
 headline: Commandes
 create: false
 type: pages
-parent: site.find("test-orders")
+parent: site.find("orders")
 template: order
 sortBy: num desc
 text: "#{{ page.invoiceNumber }}"
