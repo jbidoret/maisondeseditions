@@ -124,6 +124,7 @@ return [
         "email.confirmation.billingAddress" => "Billing address",
         "email.confirmation.shippingAddress" => "Shipping address",
         "email.confirmation.atTheWorkshop" => "Pick up at the workshop",
+        "email.confirmation.pickUpAtTheWorkshop" => "Retrait à l’atelier, {address}.",
         "email.confirmation.viewInvoice" => "View invoice",
         "Compute shipping" => "Compute shipping cost",
         "new order" => "New order",

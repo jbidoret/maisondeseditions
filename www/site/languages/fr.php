@@ -119,6 +119,7 @@ return [
         "email.confirmation.billingAddress" => "Adresse de facturation",
         "email.confirmation.shippingAddress" => "Adresse de livraison",
         "email.confirmation.atTheWorkshop" => "Retrait à l’atelier",
+        "email.confirmation.pickUpAtTheWorkshop" => "Retrait à l’atelier, {address}.",
         "email.confirmation.viewInvoice" => "Voir la facture",
         "Compute shipping" => "Calculer les frais de port et d’emballage",
         "new order" => "Nouvelle commande",
