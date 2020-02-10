@@ -4,9 +4,7 @@ return [
     'code' => 'fr',
     'default' => true,
     'direction' => 'ltr',
-    'locale' => [
-        'fr_FR'
-    ],
+    'locale' => 'fr_FR',
     'name' => 'Français',
     'translations' => [
         "legal.accept"  => "J’accepte les <a class='underlink' href='{legalurl}' data-href='cg' target='_blank'>conditions générales</a>",
