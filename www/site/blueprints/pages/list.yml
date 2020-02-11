@@ -15,3 +15,17 @@ sections:
     type: pages
     headline: Articles
     status: listed
+  champs:
+    type: fields
+    fields:
+      line:
+        type: line
+      ogdescription:
+        label: OG:Description
+        type: text
+        width: 1/2
+      ogimage:
+        label: OG:Image
+        type: files
+        max: 1
+        width: 1/2

@@ -1,4 +1,4 @@
-<meta name="description" content="<?= $site->description()->text() ?>">
+<meta name="description" content="<? e($page->ogdescription()->isNotEmpty(), $page->ogdescription()->text(), $site->description()->text())  ?>">
     <meta name="keywords" content="<?= $site->keywords()->text() ?>">
 
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -12,25 +12,24 @@
     <meta name="msapplication-config" content="<?= $kirby->urls()->assets() ?>/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <meta property="og:url" content="<?= $site->url() ?>">
+    <meta property="og:url" content="<?= $page->url() ?>">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="<?= r($page !== $site->homePage(), $page->title()->html() . ' | ') . $site->title()->html() ?>">
-    <meta property="og:description" content="<?= $site->description()->text() ?>">
+    <meta property="og:title" content="<?= r($page !== $site->homePage(), $page->title() . ' – ') . $site->title() ?>">
+    <meta property="og:description" content="<? e($page->ogdescription()->isNotEmpty(), $page->ogdescription()->text(), $site->description()->text())  ?>">
     <meta property="og:site_name" content="<?= $site->title() ?>">
     <meta property="og:locale" content="<?= $kirby->language() ?>">
-
-    <?php
-        if ($page->cover() != "") :
-            $cover = $page->cover()->toFile();
-            if (!$cover) {
-                $cover = page('home')->images()->first();
-            }
-            $og_cover = $cover->thumb(['width' => 1200, 'height' => 630, 'crop' => true]);
-
+    <?php if ($page->ogimage()->isNotEmpty()) {
+            $cover = $page->ogimage()->first()->toFile();
+        } elseif ($page->cover()->isNotEmpty()) {
+            $cover = $page->cover()->first()->toFile();
+        } else {
+            $cover = page('home')->images()->first();
+        }
+        $og_cover = $cover->thumb(['width' => 1200, 'height' => 630, 'crop' => true]);
     ?>
 
     <meta property="og:image" content="<?= $og_cover->url() ?>">
     <meta property="og:image:width" content="<?= $og_cover->width() ?>">
     <meta property="og:image:height" content="<?= $og_cover->height() ?>">
 
-    <?php endif ?>
+

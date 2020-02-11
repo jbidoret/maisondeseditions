@@ -19,3 +19,14 @@ fields:
       justified: Justifiée
       simple: Simple
     default: justified  
+  line:
+    type: line
+  ogdescription:
+    label: OG:Description
+    type: text
+    width: 1/2
+  ogimage:
+    label: OG:Image
+    type: files
+    max: 1
+    width: 1/2
