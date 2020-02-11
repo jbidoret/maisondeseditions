@@ -734,6 +734,8 @@ h4 a {
   }
 }
 
+.error { margin-bottom: 1em; }
+
 .checkout-step.visible {
   &:not(:first-of-type){
     padding-top: $baseline;
