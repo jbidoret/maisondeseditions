@@ -15,7 +15,11 @@
 
         <form class="form-checkout" method="post" action="shop-api/submit">
             
-            <section id="address" class="checkout-step visible ">
+            <section id="cart" class="checkout-step visible ">
+                <?php snippet('shop-cart', ['productList' => merx()->cart()]) ?>
+            </section>
+
+            <section id="address" class="checkout-step  ">
                 <?php snippet("shop-checkout-address") ?>
             </section>
 

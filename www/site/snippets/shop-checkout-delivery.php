@@ -34,7 +34,7 @@
             <?php snippet('shop-label', ['fieldId' => 'shippingAddressPostalCode', 'label' => t("postalCode"), 'class' => 'is-1-3', 'autocomplete' => 'shipping postal-code']); ?>
             <?php snippet('shop-label', ['fieldId' => 'shippingAddressCity', 'label' => t("city"), 'class' => 'is-2-3', 'autocomplete' => 'shipping address-level2']); ?>
             <?php snippet('shop-label', ['fieldId' => 'shippingAddressState', 'label' => t("state"), 'class' => 'is-1-2', 'autocomplete' => 'shipping address-level1']); ?>
-            <?php snippet('shop-label', ['fieldId' => 'shippingAddressCountryCode', 'label' => t("country"), 'class' => 'is-1-2', 'autocomplete' => 'shipping country']); ?>
+            <?php snippet('shop-label', ['fieldId' => 'shippingAddressCountryCode', 'label' => t("country"), 'class' => 'is-1-2', 'autocomplete' => 'shipping country', 'help' => t("Des frais de port supplémentaires peuvent être facturés pour les destinations hors France et hors UE.")]); ?>
         </div>
     </article>
 </div>

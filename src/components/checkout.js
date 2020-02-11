@@ -16,11 +16,22 @@ const stripeStyle = {
 };
 
 if (checkoutForm) {
-
+    const back_btn = document.querySelector("#checkout-back-button");
+    const frwd_btn = document.querySelector("#checkout-frwd-button");
     const delivery_btn = document.querySelector("#checkout-delivery-button");
     const payment_btn = document.querySelector("#checkout-payment-button");
     // const shipping_btn = document.querySelector("#checkout-shipping-button");
 
+    back_btn.addEventListener('click', function(){
+        document.location = this.getAttribute('data-back_href');
+    });
+
+    frwd_btn.addEventListener('click', function(){
+        document.querySelector('#address').classList.add('visible');
+        this.parentElement.remove();
+        scrollToId('#address');
+    });
+    
     delivery_btn.addEventListener('click', function(){
         // document.querySelector('a[href="#delivery"]').classList.remove('disabled');
         document.querySelector('#delivery').classList.add('visible');
@@ -143,8 +154,8 @@ function submit() {
       showFieldErrors(data.details);
     } else {
       const errorElement = checkoutForm.querySelector('.form-checkout__submit .error');
-      console.log("data");
-      console.log(data);
+      // console.log("data");
+      // console.log(data);
       errorElement.textContent = data.message;
     }
     // unsetLoading();

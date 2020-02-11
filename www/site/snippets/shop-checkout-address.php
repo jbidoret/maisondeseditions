@@ -14,7 +14,7 @@
             <?php snippet('shop-label', ['fieldId' => 'postalCode', 'label' => t("postalCode"), 'class' => 'is-1-3', 'autocomplete' => 'postal-code']); ?>
             <?php snippet('shop-label', ['fieldId' => 'city', 'label' => t("city"), 'class' => 'is-2-3', 'autocomplete' => 'address-level2']); ?>
             <?php snippet('shop-label', ['fieldId' => 'state', 'label' => t("state"), 'class' => 'is-1-2', 'autocomplete' => 'address-level1']); ?>
-            <?php snippet('shop-label', ['fieldId' => 'countryCode', 'label' => t("country"), 'class' => 'is-1-2', 'autocomplete' => 'country']); ?>
+            <?php snippet('shop-label', ['fieldId' => 'countryCode', 'label' => t("country"), 'class' => 'is-1-2', 'autocomplete' => 'country', 'help' => t("Des frais de port supplémentaires peuvent être facturés pour les destinations hors France et hors UE.")]); ?>
         </div>
     </article>
 </div>

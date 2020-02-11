@@ -4,9 +4,18 @@ return [
     'code' => 'fr',
     'default' => true,
     'direction' => 'ltr',
-    'locale' => 'fr_FR',
+    'locale' => [
+        LC_ALL      => 'fr_FR.utf8',
+        LC_COLLATE  => 'fr_FR.utf8',
+        LC_MONETARY => 'fr_FR.utf8',
+        LC_NUMERIC  => 'fr_FR.utf8',
+        LC_TIME     => 'fr_FR.utf8',
+        LC_MESSAGES => 'fr_FR.utf8',
+        LC_CTYPE    => 'fr_FR.utf8'
+    ],
     'name' => 'Français',
     'translations' => [
+        "Retour" => "Retour",
         "legal.accept"  => "J’accepte les <a class='underlink' href='{legalurl}' data-href='cg' target='_blank'>conditions générales</a>",
         "Order preview" => "Aperçu de la commande",
         "Contact" => "Contact",
@@ -131,7 +140,7 @@ return [
         "checkout.gotoCheckout" => "Valider la commande",
         "Afficher dans le panneau d’administration" => "Voir dans le panneau d’administration",
         "Afficher la facture" => "Voir la facture",
-
+        "Des frais de port supplémentaires peuvent être facturés pour les destinations hors France et hors UE." => "Des frais de port supplémentaires peuvent être facturés pour les destinations hors France et hors UE.",
     ],
     'url' => NULL
 ];

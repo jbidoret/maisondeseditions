@@ -5,10 +5,17 @@ return [
     'default' => false,
     'direction' => 'ltr',
     'locale' => [
-        'en_GB'
+        LC_ALL      => 'en_GB.utf8',
+        LC_COLLATE  => 'en_GB.utf8',
+        LC_MONETARY => 'en_GB.utf8',
+        LC_NUMERIC  => 'en_GB.utf8',
+        LC_TIME     => 'en_GB.utf8',
+        LC_MESSAGES => 'en_GB.utf8',
+        LC_CTYPE    => 'en_GB.utf8'
     ],
     'name' => 'English',
     'translations' => [
+        "Retour" => "Back",
         "legal.accept"  => "I accept the <a class='underlink' href='{legalurl}' data-href='cg' target='_blank'>terms and conditions</a>",
         "Order preview" => "Order preview",
         "Contact" => "Contact",
@@ -138,7 +145,7 @@ return [
         "checkout.gotoCheckout" => "Proceed to checkout",
         "Afficher dans le panneau d’administration" => "View in panel",
         "Afficher la facture" => "View invoice",
-
+        "Des frais de port supplémentaires peuvent être facturés pour les destinations hors France et hors UE." => "Additional shipping costs may be charged for destinations outside France and outside the EU.",
     ],
     'url' => NULL
 ];

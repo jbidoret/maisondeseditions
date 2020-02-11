@@ -17,7 +17,6 @@ return [
 
     'languages' => false,
     'languages.detect' => false,
-    'locale' => 'fr_FR.utf-8',
 
     'checkoutPage' => '/shop/checkout',
     'cartPage' => '/shop/cart',
@@ -262,12 +261,6 @@ return [
                         'price' => (float)(string)$shipping_price
                     ]);
                 }
-
-                // if ($cart->get('knitted-socks')['quantity'] >= 5) {
-                //     $cart->add([
-                //         'id' => 'discount',
-                //     ]);
-                // }
             }
         },
         'page.changeStatus:after' => function ($newPage, $oldPage) {

@@ -70,5 +70,9 @@
     </table>
 </div>
 
+<div class="checkout-buttons">
+    <button type="button" id="checkout-back-button" data-back_href="<?= page("shop")->url() ?>"><?= t("Retour") ?></button>
+    <button type="button" id="checkout-frwd-button"><?= t("checkout.gotoCheckout") ?></button>
+</div>
 
 <?php endif; ?>

@@ -24,5 +24,8 @@ $orderPage = new OrderPage([
     <?php else: ?>
         <input type="<?= $field['type'] ?>" name="<?= strtolower($fieldId) ?>" id="<?= strtolower($fieldId) ?>" <?= $required ? 'required' : '' ?> <?= isset($autocomplete) ? 'autocomplete="'.$autocomplete.'"' : '' ?>>
     <?php endif; ?>
+    <?php if(isset($help)): ?>
+        <small><?= $help ?></small>
+    <?php endif; ?>
 </p>
 <?php endif; ?>
