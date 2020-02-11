@@ -21,7 +21,7 @@
     <?php if ($page->ogimage()->isNotEmpty()) {
             $cover = $page->ogimage()->first()->toFile();
         } elseif ($page->cover()->isNotEmpty()) {
-            $cover = $page->cover()->first()->toFile();
+            $cover = $page->cover()->toFile();
         } else {
             $cover = page('home')->images()->first();
         }
