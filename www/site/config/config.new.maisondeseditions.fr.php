@@ -9,6 +9,5 @@ return [
     'schnti.cachebuster.active' => true,
     'environment' => 'preprod',
     'ww.merx.production' => true,
-    'ww.merx.ordersPage' => 'orders',
-    'panel.install' => true,
+    'ww.merx.ordersPage' => 'orders'
 ];

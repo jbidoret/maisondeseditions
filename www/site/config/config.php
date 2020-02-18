@@ -113,6 +113,7 @@ return [
                 $cart = $merx->cart();
                 $paymentIntent = $cart->getStripePaymentIntent();
                 kirby()->session()->set('ww.site.paymentIntentId', $paymentIntent->id);
+                die($paymentIntent);
                 return [
                     'clientSecret' => $paymentIntent->client_secret,
                 ];
