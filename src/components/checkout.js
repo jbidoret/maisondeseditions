@@ -238,8 +238,10 @@ if (checkoutForm) {
         // scrollToId('#loading');
       if (paymentMethod === 'credit-card-sca') {
         const clientSecret = await getClientSecret();
-        const cardElement = stripe.card;
+        console.log(clientSecret);
         console.log(checkoutForm.name.value);
+        const cardElement = stripe.card;
+        
         const { error } = await stripe.handleCardPayment(
           clientSecret, cardElement, {
             payment_method_data: {
