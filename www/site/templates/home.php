@@ -1,7 +1,13 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  <main class="main" role="main" id="pourlinstant">
+    
+    <a href="<?php echo page('evenements/pour-l-instant')->url()?>">
+      <img src="<?= $page->images()->first()->url() ?>" alt="">
+    </a>
+    
     <a class="news-link" id="pourlinstant-link" href="<?php echo page('evenements/pour-l-instant')->url()?>">
+    
     <em>Pour l’instant</em> est un livre de Monique Larrouture-Poueyto, mis en page par Jean-Marc Saint-Paul et édité par la Maison des éditions</a>
     <!-- <a id="volumes-link" href="https://volumes.lu">Volumes est une exposition de design graphique et de livres.</a> -->
     <div id="home-content" class="gimmewhitespace">

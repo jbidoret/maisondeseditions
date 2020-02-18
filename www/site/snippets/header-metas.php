@@ -23,7 +23,7 @@
         } elseif ($page->cover()->isNotEmpty()) {
             $cover = $page->cover()->toFile();
         } else {
-            $cover = page('home')->images()->first();
+            $cover = page('home')->images()->filterBy('template', 'logo')->first();
         }
         $og_cover = $cover->thumb(['width' => 1200, 'height' => 630, 'crop' => true]);
     ?>
