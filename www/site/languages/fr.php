@@ -120,6 +120,7 @@ return [
         "email.confirmation.orderOverview" => "Commande",
         "email.confirmation.product" => "Article",
         "email.confirmation.quantity" => "Quantité",
+        "email.confirmation.q" => "Q.",
         "email.confirmation.unitPrice" => "P.U.",
         "email.confirmation.quantity" => "Quantité",
         "email.confirmation.VATIncluded" => "TVA incluse",

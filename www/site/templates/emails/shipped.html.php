@@ -254,7 +254,7 @@ use Wagnerwagner\Merx\Merx;
                             <?php echo t("email.confirmation.product") ?>
                           </th>
                           <th class="th" style="text-transform: uppercase; font-size: 14px; font-weight: 400; padding-bottom: 20px; padding-right: 5px; text-align: center;" align="center">
-                            <?php echo t("email.confirmation.quantity") ?>
+                            <?php echo t("email.confirmation.q") ?>
                           </th>
                           <th class="th" style="text-transform: uppercase; font-size: 14px; font-weight: 400; padding-bottom: 20px; padding-right: 5px; text-align: right;" align="right">
                             <?php echo t("email.confirmation.unitPrice") ?>

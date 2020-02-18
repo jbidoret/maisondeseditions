@@ -125,6 +125,7 @@ return [
         "email.confirmation.orderOverview" => "Order",
         "email.confirmation.product" => "Product",
         "email.confirmation.quantity" => "Quantity",
+        "email.confirmation.q" => "Q.",
         "email.confirmation.unitPrice" => "U.P.",
         "email.confirmation.quantity" => "Quantity",
         "email.confirmation.VATIncluded" => "VAT included",
