@@ -16,6 +16,20 @@ const stripeStyle = {
 };
 
 if (checkoutForm) {
+
+    // reload on access
+    window.addEventListener( "pageshow", function ( event ) {
+      var historyTraversal = event.persisted || 
+                             ( typeof window.performance != "undefined" && 
+                                  window.performance.navigation.type === 2 );
+      if ( historyTraversal ) {
+        // Handle page restore.
+        window.location.reload();
+      }
+    });
+    
+
+    
     const back_btn = document.querySelector("#checkout-back-button");
     const frwd_btn = document.querySelector("#checkout-frwd-button");
     const delivery_btn = document.querySelector("#checkout-delivery-button");
